@@ -1,8 +1,28 @@
 # Zac Morgan
 
-Final-year **Bachelor of Data Science Engineering (Honours)** student at the University of Technology Sydney, focused on data engineering, analytics automation, applied machine learning, and practical self-hosted software.
+**Data engineering, applied ML, and software for working photographers.**
 
-I like building systems that solve real operational problems: reliable data pipelines, internal tools, ML prototypes, and full-stack applications that can be deployed and maintained outside a demo environment.
+I build practical systems that turn complex workflows into tools people can use: reliable data pipelines, analytics automation, and photography software shaped by real client work.
+
+Final-year **Bachelor of Data Science Engineering (Honours)** student at the University of Technology Sydney, with experience in data analysis, freelance photography, and student leadership.
+
+[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [Email](mailto:zacmorgan101@gmail.com) · [GitHub](https://github.com/zzm6899)
+
+## Photography Software
+
+### [Keptra](https://github.com/zzm6899/Keptra)
+**Review a shoot. Choose the keepers. Import with confidence.**
+
+Photo culling and import for Windows and macOS, with picks and ratings, local photo analysis, duplicate detection, folder organisation, and optional backup and transfer verification.
+
+[Explore the product](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Licensing](https://keptra.z2hs.au/#pricing)
+
+### Watermark Vault
+**From the first booking to the final gallery.**
+
+A photography workflow platform for bookings, watermarked proofs, client selections, gallery delivery, invoicing, payments, and studio administration. Built around event, convention, and portrait photography.
+
+Commercial access uses license keys. [Contact me about the product](mailto:zacmorgan101@gmail.com).
 
 ## Focus Areas
 
@@ -12,13 +32,11 @@ I like building systems that solve real operational problems: reliable data pipe
 - **Infrastructure:** Docker Compose, Nginx, TrueNAS, Pi-hole, self-hosted services
 - **Professional strengths:** stakeholder communication, leadership, project ownership, delivery under pressure
 
-## Selected Work
+## More Selected Work
 
 | Project | What it demonstrates | Stack |
 | --- | --- | --- |
-| [Watermark Vault](https://github.com/zzm6899/watermark-vault) | Full-stack photography workflow platform with proofing, watermarking, bookings, payments, contracts, and mobile capture support. | TypeScript, React, Node.js, SQLite, Stripe, Docker |
 | [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) | Self-hosted balance tracking and analytics for Australian arcade cards, with scheduled polling and Discord bot integration. | Python, Flask, SQLite, Discord.py, Docker |
-| [autophotoimporter](https://github.com/zzm6899/autophotoimporter) | Automated photo import and protected-image display tooling for media workflows. | TypeScript |
 | [Nibbl](https://github.com/zzm6899/Nibbl) | Android application development and Kotlin practice. | Kotlin |
 | [landingpage](https://github.com/zzm6899/landingpage) | Containerised React portfolio with Docker, Nginx, and CI/CD-oriented deployment. | React, TypeScript, Docker, Vite |
 
