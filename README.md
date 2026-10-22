@@ -1,66 +1,62 @@
-# Zac Morgan
+# Hi, I'm Zac
 
-**Data engineering, applied ML, and software for working photographers.**
+I build data systems and software for working photographers. My work sits where data engineering, applied machine learning and real studio operations meet—from reliable pipelines and reporting to tools used around shoots and client delivery.
 
-I build practical systems that turn complex workflows into tools people can use: reliable data pipelines, analytics automation, and photography software shaped by real client work.
+I'm completing a **Bachelor of Data Science Engineering (Honours)** at the University of Technology Sydney, with experience in data analysis, freelance photography and student leadership.
 
-Final-year **Bachelor of Data Science Engineering (Honours)** student at the University of Technology Sydney, with experience in data analysis, freelance photography, and student leadership.
+[Photography software](#photography-software) · [Selected work](#selected-work) · [Experience](#experience) · [Contact](#contact)
 
-[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [Email](mailto:zacmorgan101@gmail.com) · [GitHub](https://github.com/zzm6899)
+[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [Email](mailto:zacmorgan101@gmail.com)
 
-## Photography Software
-
-### [Keptra](https://github.com/zzm6899/Keptra)
-**Review a shoot. Choose the keepers. Import with confidence.**
-
-Photo culling and import for Windows and macOS, with picks and ratings, local photo analysis, duplicate detection, folder organisation, and optional backup and transfer verification.
-
-[Explore the product](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Licensing](https://keptra.z2hs.au/#pricing)
+## Photography software
 
 ### [Sessionry](https://github.com/zzm6899/Sessionry)
-**From the first booking to the final gallery.**
 
-A photography workflow platform for bookings, watermarked proofs, client selections, gallery delivery, invoicing, payments, and studio administration. Built around event, convention, and portrait photography.
+<a href="https://github.com/zzm6899/Sessionry">
+  <img src="https://raw.githubusercontent.com/zzm6899/Sessionry/main/assets/sessionry-wordmark.svg" alt="Sessionry — photography workflow for studios" width="300">
+</a>
 
-Admin and tenant workspaces include studio guides and passkey sign-in, with password login available as a fallback. Features and integrations depend on setup. Commercial access is arranged by enquiry; the access page does not collect payment or create an account.
+**From the first booking to the finished gallery.**
 
-[Product overview](https://github.com/zzm6899/Sessionry) · [Studio access](https://book.zacmclients.photos/buy) · [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact).
+A photography workflow platform for bookings, watermarked proofing, client selections, gallery delivery, invoicing, payment records and studio administration. It supports separate photographer workspaces, role-specific guides and passkey sign-in with password fallback.
 
-## Focus Areas
+[Product overview](https://github.com/zzm6899/Sessionry) · [Studio access](https://book.zacmclients.photos/buy) · [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact)
 
-- **Data engineering:** Python, SQL, automation workflows, reconciliation logic, structured reporting
-- **Applied ML:** TensorFlow, YOLOv5, NLP/LLM document extraction, model evaluation
-- **Full-stack tools:** React, TypeScript, Flask, Node.js, SQLite, Docker
-- **Infrastructure:** Docker Compose, Nginx, TrueNAS, Pi-hole, self-hosted services
-- **Professional strengths:** stakeholder communication, leadership, project ownership, delivery under pressure
+### [Keptra](https://github.com/zzm6899/Keptra)
 
-## More Selected Work
+**Review a shoot. Choose the keepers. Import with confidence.**
+
+A desktop photo culling and import tool for Windows and macOS. Keptra supports picks and ratings, local photo analysis, duplicate handling, folder organisation, and optional backup and transfer verification.
+
+[Explore Keptra](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Downloads](https://keptra.z2hs.au/download.html) · [Licensing](https://keptra.z2hs.au/#pricing)
+
+## What I work with
+
+- **Data engineering:** Python, SQL, automation, reconciliation and structured reporting
+- **Applied ML:** TensorFlow, YOLOv5, NLP and document extraction from OCR-generated text
+- **Full-stack development:** React, TypeScript, Flask, Node.js and SQLite
+- **Infrastructure:** Docker, Nginx, TrueNAS and self-hosted services
+
+## Selected work
 
 | Project | What it demonstrates | Stack |
 | --- | --- | --- |
-| [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) | Self-hosted balance tracking and analytics for Australian arcade cards, with scheduled polling and Discord bot integration. | Python, Flask, SQLite, Discord.py, Docker |
+| [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) | Self-hosted balance tracking and analytics for Australian arcade cards, with scheduled polling and Discord integration. | Python, Flask, SQLite, Discord.py, Docker |
 | [Nibbl](https://github.com/zzm6899/Nibbl) | Android application development and Kotlin practice. | Kotlin |
-| [landingpage](https://github.com/zzm6899/landingpage) | Containerised React portfolio with Docker, Nginx, and CI/CD-oriented deployment. | React, TypeScript, Docker, Vite |
+| [landingpage](https://github.com/zzm6899/landingpage) | A containerised React portfolio and deployment workflow. | React, TypeScript, Docker, Vite |
 
 ## Experience
 
-- **Data Analyst Intern, KPMG Australia**  
-  Worked on Long Service Leave remediation analysis using SQL, Excel, Python, and structured data validation workflows.
+- **Data Analyst Intern, KPMG Australia:** worked on Long Service Leave remediation analysis using SQL, Excel, Python and structured data validation.
+- **Freelance photographer:** built and operated client workflows across sports events, conventions, weddings and private events.
+- **Student leadership, UTS:** held treasury and sponsorship roles involving budgets, stakeholder communication and sponsorship negotiation.
 
-- **Freelance Event & Personal Photographer**  
-  Built and operated real client-facing workflows across sports events, conventions, weddings, and private events.
+## Current interests
 
-- **Student Leadership, UTS**  
-  Treasurer and sponsorship roles across student societies, including budgeting, stakeholder communication, and sponsorship negotiation.
-
-## Currently Working On
-
-- Honours research in NLP and LLM-based document extraction from OCR-generated text
-- Full-stack tools for photography, event, and media operations
-- Self-hosted infrastructure for personal projects and deployed services
+- NLP and LLM-based document extraction from OCR-generated text
+- Photography, event and media workflow software
+- Reliable self-hosted infrastructure for personal projects
 
 ## Contact
 
-- LinkedIn: [linkedin.com/in/zacmorgan1](https://www.linkedin.com/in/zacmorgan1/)
-- GitHub: [github.com/zzm6899](https://github.com/zzm6899)
-- Email: [zacmorgan101@gmail.com](mailto:zacmorgan101@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [GitHub](https://github.com/zzm6899) · [Email](mailto:zacmorgan101@gmail.com)
