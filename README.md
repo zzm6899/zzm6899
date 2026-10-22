@@ -17,14 +17,14 @@ Photo culling and import for Windows and macOS, with picks and ratings, local ph
 
 [Explore the product](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Licensing](https://keptra.z2hs.au/#pricing)
 
-### Sessionry
+### [Sessionry](https://github.com/zzm6899/Sessionry)
 **From the first booking to the final gallery.**
 
 A photography workflow platform for bookings, watermarked proofs, client selections, gallery delivery, invoicing, payments, and studio administration. Built around event, convention, and portrait photography.
 
 Admin and tenant workspaces include studio guides and passkey sign-in, with password login available as a fallback. Features and integrations depend on setup. Commercial access is arranged by enquiry; the access page does not collect payment or create an account.
 
-[Studio access](https://book.zacmclients.photos/buy) · [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact).
+[Product overview](https://github.com/zzm6899/Sessionry) · [Studio access](https://book.zacmclients.photos/buy) · [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact).
 
 ## Focus Areas
 
