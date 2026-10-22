@@ -17,12 +17,12 @@ Photo culling and import for Windows and macOS, with picks and ratings, local ph
 
 [Explore the product](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Licensing](https://keptra.z2hs.au/#pricing)
 
-### Watermark Vault
+### Sessionry
 **From the first booking to the final gallery.**
 
 A photography workflow platform for bookings, watermarked proofs, client selections, gallery delivery, invoicing, payments, and studio administration. Built around event, convention, and portrait photography.
 
-Commercial access uses license keys. [Contact me about the product](mailto:zacmorgan101@gmail.com).
+Commercial access uses license keys. [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact).
 
 ## Focus Areas
 
