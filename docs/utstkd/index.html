@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-AU" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="description" content="An interactive demo of the member, coach and committee workflows behind the UTS Taekwondo club website.">
+  <meta property="og:title" content="UTS Taekwondo · Club software demo">
+  <meta property="og:description" content="Book a class, take roll call and manage the timetable using fictional data.">
+  <meta name="theme-color" content="#191b19">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; form-action 'none'; base-uri 'none'">
+  <title>UTS Taekwondo · Club software demo</title>
+  <style>
+    :root { color-scheme: light; --dark: #191b19; --cream: #f7f5ee; --ink: #222722; --muted: #555e54; --line: #dedfd4; --orange: #ff9a78; --green: #244839; font: 16px/1.5 system-ui, sans-serif; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; color: var(--cream); background: var(--dark); }
+    a { color: inherit; text-underline-offset: 5px; }
+    button { font: inherit; cursor: pointer; min-height: 44px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #d56544; outline-offset: 4px; }
+    .wrap { width: min(calc(100% - 48px), 1110px); margin-inline: auto; }
+    .skip { position: fixed; top: 12px; left: 12px; z-index: 2; padding: 12px; color: var(--ink); background: white; transform: translateY(-150%); }
+    .skip:focus { transform: none; }
+    .masthead { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 18px; border-bottom: 1px solid #3c403b; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .belt { width: 24px; height: 14px; border: 2px solid var(--orange); transform: skewX(-12deg); background: linear-gradient(90deg, transparent 60%, var(--orange) 60%, var(--orange) 75%, transparent 75%); }
+    .masthead a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #dce0d5; font-size: .875rem; }
+    .masthead a:hover { color: var(--orange); }
+    .hero { padding: clamp(36px, 6vw, 80px) 0 30px; animation: enter .45s ease-out both; }
+    .eyebrow { margin: 0 0 10px; color: var(--orange); font-size: .875rem; font-weight: 680; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { max-width: 22ch; font-size: clamp(2.1rem, 6.3vw, 4.6rem); letter-spacing: -.07em; line-height: .99; font-weight: 750; }
+    .intro { max-width: 58ch; margin-top: 18px; color: #d4d9ce; }
+    .app-frame { overflow: hidden; border: 1px solid #d3d5c8; border-radius: 16px; color: var(--ink); background: var(--cream); }
+    .app-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line); }
+    .app-head p { color: var(--muted); font-size: .875rem; }
+    .role-bar { display: flex; gap: 5px; padding: 4px; border: 1px solid #d1d3c7; border-radius: 8px; background: #ebece4; }
+    .role-bar button { min-width: 80px; padding: 0 12px; border: 1px solid transparent; border-radius: 5px; color: var(--muted); background: transparent; font-weight: 680; }
+    .role-bar button[aria-pressed="true"] { border-color: #d1d3c7; color: var(--ink); background: #fff; box-shadow: 0 1px 2px #24291e18; }
+    .role-bar button:hover { color: var(--ink); background: #fff; }
+    .panel { min-height: 366px; padding: clamp(16px, 3.5vw, 32px); }
+    .view-head { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 20px; }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.125rem); letter-spacing: -.045em; line-height: 1.15; }
+    .view-head p { margin-top: 6px; color: var(--muted); }
+    .view-head .summary { margin: 0; padding: 8px 12px; background: #e3eade; border-radius: 5px; color: var(--green); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .schedule { list-style: none; margin: 0; padding: 0; border-block-start: 1px solid var(--line); }
+    .row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px; min-height: 83px; padding-block: 10px; border-block-end: 1px solid var(--line); }
+    .date { display: grid; align-content: center; justify-items: center; width: 55px; height: 56px; border: 1px solid #dbddd2; border-radius: 5px; color: var(--green); background: #edf0e8; line-height: 1.1; }
+    .date span { font-size: .72rem; font-weight: 680; }
+    .date strong { font-size: 1.45rem; font-variant-numeric: tabular-nums; }
+    h3 { font-size: 1rem; line-height: 1.3; }
+    .row p { color: var(--muted); font-size: .875rem; margin-top: 5px; }
+    .action { min-width: 118px; border-radius: 6px; padding: 0 12px; border: 1px solid var(--green); color: white; background: var(--green); font-weight: 680; font-size: .875rem; transition: background .15s, transform .15s; }
+    .action:hover { background: #35644f; transform: translateY(-2px); }
+    .action:active { transform: translateY(0); }
+    .action.secondary { border-color: #aab2a4; color: var(--green); background: transparent; }
+    .action.secondary:hover { background: #e3eade; }
+    .status { text-align: end; color: var(--muted); font-size: .875rem; font-weight: 650; }
+    .roster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 12px; }
+    .roster article { padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    .roster ul { list-style: none; padding: 0; margin: 10px 0 0; }
+    .roll-item { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; padding: 5px 0; border-top: 1px solid var(--line); font-size: .875rem; }
+    .roll-item button { padding-inline: 10px; border: 1px solid var(--line); border-radius: 5px; color: var(--muted); background: #fff; font-weight: 650; }
+    .roll-item button[aria-pressed="true"] { color: var(--green); background: #e3eade; }
+    .roll-item button:hover { border-color: var(--green); }
+    .roster .status { margin-top: 10px; text-align: left; }
+    .roster-summary { color: var(--muted); font-size: .875rem; margin-top: 4px; }
+    .footer { display: flex; justify-content: space-between; gap: 12px; align-items: start; padding: 16px 0 24px; color: #d4d9ce; font-size: .875rem; }
+    #feedback { color: #f1c4af; }
+    @keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 620px) {
+      .wrap { width: calc(100% - 32px); }
+      .app-head { align-items: stretch; flex-direction: column; padding: 14px; gap: 8px; }
+      .role-bar button { flex: 1; min-width: 0; padding-inline: 5px; }
+      .row { gap: 10px; grid-template-columns: auto minmax(0, 1fr); }
+      .row > :last-child { grid-column: 2; justify-self: start; text-align: start; }
+      .roster { grid-template-columns: 1fr; }
+      .footer { flex-direction: column; gap: 5px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to demo</a>
+  <header class="masthead wrap">
+    <p class="brand"><span class="belt" aria-hidden="true"></span>UTS Taekwondo</p>
+    <a href="https://www.utstkd.org.au/">Visit club site <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <div class="hero" data-enter>
+      <p class="eyebrow">Interactive project demo</p>
+      <h1>Club software for UTS Taekwondo</h1>
+      <p class="intro">Book a class as a member, take roll call as a coach, then change the timetable as a committee member.</p>
+    </div>
+    <section class="app-frame" id="demo" aria-label="Club software demo" tabindex="-1">
+      <div class="app-head">
+        <p>Fictional roster · Changes reset on reload</p>
+        <div class="role-bar" role="group" aria-label="Demo role">
+          <button type="button" data-role="member" aria-pressed="true">Member</button>
+          <button type="button" data-role="coach" aria-pressed="false">Coach</button>
+          <button type="button" data-role="committee" aria-pressed="false">Committee</button>
+        </div>
+      </div>
+      <div id="panel" class="panel"></div>
+      <noscript><p>Enable JavaScript to use the club software demo.</p></noscript>
+    </section>
+    <footer class="footer">
+      <p>Demo activity stays in this tab.</p>
+      <p id="feedback" role="status" aria-live="polite"></p>
+    </footer>
+  </main>
+  <script>
+    const classes = [
+      { day: 'Mon', date: 16, title: 'Taekwondo fundamentals', time: '6:30–8:00 pm', capacity: 8, roster: ['Member 101', 'Member 102'], checkedIn: new Set(['Member 101']), cancelled: false },
+      { day: 'Wed', date: 18, title: 'Sparring practice', time: '6:30–8:00 pm', capacity: 10, roster: ['Member 103', 'Member 104', 'Member 105'], checkedIn: new Set(), cancelled: false }
+    ];
+    const visitor = 'Demo member';
+    const panel = document.querySelector('#panel');
+    const feedback = document.querySelector('#feedback');
+    const roleButtons = document.querySelectorAll('[data-role]');
+    let role = 'member';
+
+    function scheduleRow(session, index) {
+      const booked = session.roster.includes(visitor);
+      const description = role === 'member'
+        ? `${session.time} · ${session.cancelled ? 'Cancelled' : booked ? 'Booked' : `${session.capacity - session.roster.length} spots left`}`
+        : `${session.time} · ${session.cancelled ? 'Cancelled' : 'Scheduled'} · ${session.roster.length} booked · ${session.checkedIn.size} present`;
+      let control;
+      if (role === 'committee') {
+        control = `<button class="action secondary" type="button" data-action="schedule" data-class="${index}">${session.cancelled ? 'Restore class' : 'Cancel class'}</button>`;
+      } else if (session.cancelled || (!booked && session.roster.length >= session.capacity)) {
+        control = `<span class="status">${session.cancelled ? 'Class cancelled' : 'Class full'}</span>`;
+      } else {
+        control = `<button class="action ${booked ? 'secondary' : ''}" type="button" data-action="book" data-class="${index}">${booked ? 'Leave class' : 'Book class'}</button>`;
+      }
+      return `<li class="row">
+        <time class="date" datetime="2026-11-${session.date}" aria-label="${session.day} ${session.date} November"><span>${session.day}</span><strong>${session.date}</strong></time>
+        <div><h3>${session.title}</h3><p>${description}</p></div>
+        ${control}
+      </li>`;
+    }
+
+    function rollCall(session, index) {
+      const attendees = session.roster.map((member, memberIndex) => {
+        const present = session.checkedIn.has(member);
+        return `<li class="roll-item"><span>${member}</span><button type="button" data-action="attendance" data-class="${index}" data-member="${memberIndex}" aria-pressed="${present}" aria-label="Mark present: ${member}">${present ? 'Present' : 'Mark present'}</button></li>`;
+      }).join('');
+      return `<article><h3>${session.title}</h3>${session.cancelled
+        ? '<p class="status">Class cancelled</p>'
+        : `<p class="roster-summary">${session.checkedIn.size} of ${session.roster.length} present</p><ul>${attendees}</ul>`}</article>`;
+    }
+
+    function render() {
+      if (role === 'coach') {
+        panel.innerHTML = `<div class="view-head"><div><h2>Class roll call</h2><p>Coach view with roll call access.</p></div></div>
+          <div class="roster">${classes.map(rollCall).join('')}</div>`;
+        return;
+      }
+      const memberView = role === 'member';
+      const count = classes.filter(session => !session.cancelled && session.roster.includes(visitor)).length;
+      panel.innerHTML = `<div class="view-head">
+        <div><h2>${memberView ? 'Upcoming classes' : 'Club timetable'}</h2><p>16–22 November · Sydney time</p></div>
+        ${memberView ? `<p class="summary">${count} booked</p>` : ''}
+      </div><ul class="schedule">${classes.map(scheduleRow).join('')}</ul>`;
+    }
+
+    roleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        role = button.dataset.role;
+        roleButtons.forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+        feedback.textContent = `${button.textContent} view selected.`;
+        render();
+      });
+    });
+
+    panel.addEventListener('click', event => {
+      const button = event.target.closest('button[data-action]');
+      if (!button) return;
+      const { action, class: index, member: memberIndex } = button.dataset;
+      const session = classes[index];
+      if (action === 'book' && role === 'member' && !session.cancelled) {
+        const spot = session.roster.indexOf(visitor);
+        if (spot >= 0) {
+          session.roster.splice(spot, 1);
+          session.checkedIn.delete(visitor);
+          feedback.textContent = `Booking removed for ${session.title}.`;
+        } else if (session.roster.length < session.capacity) {
+          session.roster.push(visitor);
+          feedback.textContent = `Booking added for ${session.title}.`;
+        }
+      } else if (action === 'attendance' && role === 'coach' && !session.cancelled) {
+        const member = session.roster[memberIndex];
+        if (session.checkedIn.has(member)) {
+          session.checkedIn.delete(member);
+          feedback.textContent = `Check-in removed for ${member}.`;
+        } else {
+          session.checkedIn.add(member);
+          feedback.textContent = `Check-in recorded for ${member}.`;
+        }
+      } else if (action === 'schedule' && role === 'committee') {
+        session.cancelled = !session.cancelled;
+        feedback.textContent = `${session.title} ${session.cancelled ? 'cancelled' : 'restored'}.`;
+      }
+      render();
+      const selector = `[data-action="${action}"][data-class="${index}"]${memberIndex === undefined ? '' : `[data-member="${memberIndex}"]`}`;
+      panel.querySelector(selector)?.focus({ preventScroll: true });
+    });
+
+    render();
+  </script>
+</body>
+</html>

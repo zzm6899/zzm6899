@@ -1,62 +1,41 @@
-# Hi, I'm Zac
+# Zac Morgan
 
-I build data systems and software for working photographers. My work sits where data engineering, applied machine learning and real studio operations meet—from reliable pipelines and reporting to tools used around shoots and client delivery.
+I’m a data engineering student at the University of Technology Sydney and a freelance photographer. I build software for the work around a shoot and for the clubs and teams I work with.
 
-I'm completing a **Bachelor of Data Science Engineering (Honours)** at the University of Technology Sydney, with experience in data analysis, freelance photography and student leadership.
+[LinkedIn](https://www.linkedin.com/in/zacmorgan1/)
 
-[Photography software](#photography-software) · [Selected work](#selected-work) · [Experience](#experience) · [Contact](#contact)
+## Projects
 
-[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [Email](mailto:zacmorgan101@gmail.com)
+### [Sessionry](https://github.com/zzm6899/Sessionry) · Run a photography studio
 
-## Photography software
+Manage bookings, send watermarked proofs for client selections, and deliver finished galleries from one workspace. Sessionry also handles quotes, invoices and payment records.
 
-### [Sessionry](https://github.com/zzm6899/Sessionry)
+[Try the proofing demo](https://book.zacmclients.photos/demo/proofing) · [Explore studio access](https://book.zacmclients.photos/buy)
 
-<a href="https://github.com/zzm6899/Sessionry">
-  <img src="https://raw.githubusercontent.com/zzm6899/Sessionry/main/assets/sessionry-wordmark.svg" alt="Sessionry — photography workflow for studios" width="300">
-</a>
+### [Keptra](https://github.com/zzm6899/Keptra) · Cull and import a shoot
 
-**From the first booking to the finished gallery.**
+Review a memory card, compare bursts and pick the frames worth keeping. The Windows and macOS app can organise selected files into folders, create a backup and verify the transfer. Photo analysis runs locally.
 
-A photography workflow platform for bookings, watermarked proofing, client selections, gallery delivery, invoicing, payment records and studio administration. It supports separate photographer workspaces, role-specific guides and passkey sign-in with password fallback.
+[Explore Keptra](https://keptra.z2hs.au/) · [Download the desktop app](https://keptra.z2hs.au/download.html)
 
-[Product overview](https://github.com/zzm6899/Sessionry) · [Studio access](https://book.zacmclients.photos/buy) · [Proofing demo](https://book.zacmclients.photos/demo/proofing) · [Contact](https://book.zacmclients.photos/contact)
+### UTS Taekwondo · Club website and member portal
 
-### [Keptra](https://github.com/zzm6899/Keptra)
+A public site for class schedules and sign-ups, with a separate portal for memberships and class passes. Coaches can see their assignments and log hours; committee members can manage registrations, attendance and payments.
 
-**Review a shoot. Choose the keepers. Import with confidence.**
+[Visit the club website](https://www.utstkd.org.au/) · [Demo source](docs/utstkd/index.html)
 
-A desktop photo culling and import tool for Windows and macOS. Keptra supports picks and ratings, local photo analysis, duplicate handling, folder organisation, and optional backup and transfer verification.
+The demo uses fictional records to let you book a class, take roll call, and update the timetable. Open the HTML in a browser to try it.
 
-[Explore Keptra](https://keptra.z2hs.au/) · [Product overview](https://github.com/zzm6899/Keptra) · [Downloads](https://keptra.z2hs.au/download.html) · [Licensing](https://keptra.z2hs.au/#pricing)
+### [Receipt OCR Lab](https://github.com/zzm6899/receipt-ocr-lab) · Compare document extraction models
 
-## What I work with
+A self-hosted OCR comparison tool with word overlays and timing results, plus research code for evaluating structured extraction from receipt images.
 
-- **Data engineering:** Python, SQL, automation, reconciliation and structured reporting
-- **Applied ML:** TensorFlow, YOLOv5, NLP and document extraction from OCR-generated text
-- **Full-stack development:** React, TypeScript, Flask, Node.js and SQLite
-- **Infrastructure:** Docker, Nginx, TrueNAS and self-hosted services
+### [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) · Track arcade card balances
 
-## Selected work
+A self-hosted Python and SQLite app that polls Australian arcade card balances and reports changes through Discord.
 
-| Project | What it demonstrates | Stack |
-| --- | --- | --- |
-| [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) | Self-hosted balance tracking and analytics for Australian arcade cards, with scheduled polling and Discord integration. | Python, Flask, SQLite, Discord.py, Docker |
-| [Nibbl](https://github.com/zzm6899/Nibbl) | Android application development and Kotlin practice. | Kotlin |
-| [landingpage](https://github.com/zzm6899/landingpage) | A containerised React portfolio and deployment workflow. | React, TypeScript, Docker, Vite |
+## Background
 
-## Experience
-
-- **Data Analyst Intern, KPMG Australia:** worked on Long Service Leave remediation analysis using SQL, Excel, Python and structured data validation.
-- **Freelance photographer:** built and operated client workflows across sports events, conventions, weddings and private events.
-- **Student leadership, UTS:** held treasury and sponsorship roles involving budgets, stakeholder communication and sponsorship negotiation.
-
-## Current interests
-
-- NLP and LLM-based document extraction from OCR-generated text
-- Photography, event and media workflow software
-- Reliable self-hosted infrastructure for personal projects
-
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/zacmorgan1/) · [GitHub](https://github.com/zzm6899) · [Email](mailto:zacmorgan101@gmail.com)
+- **UTS:** Bachelor of Data Science Engineering (Honours), in progress.
+- **KPMG Australia:** data analyst internship working on long service leave remediation with SQL, Python, Excel and data validation.
+- **Freelance photography:** sports, conventions, weddings and private events.
