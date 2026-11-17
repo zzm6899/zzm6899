@@ -17,7 +17,7 @@ I’ve also completed the GitHub Skills courses on [GitHub Pages](https://github
 - **[Keptra](https://github.com/zzm6899/Keptra)** lets me compare shots and choose keepers before copying a card. It analyses photos locally and can organise, back up and verify the imported files. [Explore Keptra](https://keptra.z2hs.au/) or [download it for Windows or macOS](https://keptra.z2hs.au/download.html).
 - **[Sessionry](https://github.com/zzm6899/Sessionry)** covers the work around a shoot. Clients pick favourites from watermarked proofs, and I can manage bookings, deliver galleries and send invoices from the same workspace. [Try the proofing demo](https://book.zacmclients.photos/demo/proofing) or [explore studio access](https://book.zacmclients.photos/buy).
 - **[UTS Taekwondo](https://www.utstkd.org.au/)** has a public timetable and sign-up page. I built the member portal to handle memberships and class passes, and to let coaches take attendance and log hours. Download and open the [demo HTML](docs/utstkd/index.html) to book a class, take roll call or update the timetable with fictional records.
-- **[Flickr Manager](https://github.com/zzm6899/flickr-manager)** helps me organise large Flickr albums, edit photo details in bulk, and upload folders from a portable Windows app.
+- **[Flickr Manager](https://github.com/zzm6899/flickr-manager)** adds the photo-title search I was missing inside individual Flickr albums. I use it to find, move and reorder photos in large albums and upload whole folders.
 
 ## Background
 
