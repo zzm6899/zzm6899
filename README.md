@@ -1,6 +1,6 @@
 # Zac Morgan
 
-I’m a data engineering student at the University of Technology Sydney and a freelance photographer. I build software for the work around a shoot and for the clubs and teams I work with.
+I’m a Data Science Engineer from University of Technology Sydney and a freelance photographer. I build software for the work around a shoot and for the clubs and teams I work with.
 
 [LinkedIn](https://www.linkedin.com/in/zacmorgan1/)
 
