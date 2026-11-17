@@ -1,41 +1,23 @@
 # Zac Morgan
 
-I’m a Data Science Engineer from University of Technology Sydney and a freelance photographer. I build software for the work around a shoot and for the clubs and teams I work with.
+I’m a Data Science Engineer and freelance photographer. When I stopped using Lightroom Classic, I missed the way it imported photos, so I built my own importer. That became Keptra.
 
 [LinkedIn](https://www.linkedin.com/in/zacmorgan1/)
 
-## Projects
+## What I’ve learned by building
 
-### [Sessionry](https://github.com/zzm6899/Sessionry) · Run a photography studio
+- **Python and SQL.** For my thesis, I wrote [experiments on extracting structured data from receipts](https://github.com/zzm6899/receipt-ocr-lab/tree/main/research). I built [Receipt OCR Lab](https://github.com/zzm6899/receipt-ocr-lab) to see where Tesseract found words on the page and how long it took. In [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker), I used Python and SQLite to keep a history of Australian arcade card balances and make them easy to check in Discord.
+- **TypeScript and Electron.** Building the [original photo importer](https://github.com/zzm6899/autophotoimporter) taught me how to detect memory cards and read EXIF metadata. Its [import engine](https://github.com/zzm6899/autophotoimporter/blob/main/src/main/services/import-engine.ts) can skip duplicates when copying files.
+- **Cloudflare and self-hosting.** I use Cloudflare for DNS and HTTPS, and Docker Compose to run services on TrueNAS. The [OCR Lab GitHub Actions workflow](https://github.com/zzm6899/receipt-ocr-lab/blob/main/.github/workflows/container.yml) runs the Python tests before building and publishing the Docker image.
 
-Manage bookings, send watermarked proofs for client selections, and deliver finished galleries from one workspace. Sessionry also handles quotes, invoices and payment records.
+I’ve also completed the GitHub Skills courses on [GitHub Pages](https://github.com/zzm6899/skills-github-pages) and [code scanning with CodeQL](https://github.com/zzm6899/skills-introduction-to-codeql).
 
-[Try the proofing demo](https://book.zacmclients.photos/demo/proofing) · [Explore studio access](https://book.zacmclients.photos/buy)
+## Projects you can try
 
-### [Keptra](https://github.com/zzm6899/Keptra) · Cull and import a shoot
-
-Review a memory card, compare bursts and pick the frames worth keeping. The Windows and macOS app can organise selected files into folders, create a backup and verify the transfer. Photo analysis runs locally.
-
-[Explore Keptra](https://keptra.z2hs.au/) · [Download the desktop app](https://keptra.z2hs.au/download.html)
-
-### UTS Taekwondo · Club website and member portal
-
-A public site for class schedules and sign-ups, with a separate portal for memberships and class passes. Coaches can see their assignments and log hours; committee members can manage registrations, attendance and payments.
-
-[Visit the club website](https://www.utstkd.org.au/) · [Demo source](docs/utstkd/index.html)
-
-The demo uses fictional records to let you book a class, take roll call, and update the timetable. Open the HTML in a browser to try it.
-
-### [Receipt OCR Lab](https://github.com/zzm6899/receipt-ocr-lab) · Compare document extraction models
-
-A self-hosted OCR comparison tool with word overlays and timing results, plus research code for evaluating structured extraction from receipt images.
-
-### [ArcadeTracker](https://github.com/zzm6899/ArcadeTracker) · Track arcade card balances
-
-A self-hosted Python and SQLite app that polls Australian arcade card balances and reports changes through Discord.
+- **[Keptra](https://github.com/zzm6899/Keptra)** lets me compare shots and choose keepers before copying a card. It analyses photos locally and can organise, back up and verify the imported files. [Explore Keptra](https://keptra.z2hs.au/) or [download it for Windows or macOS](https://keptra.z2hs.au/download.html).
+- **[Sessionry](https://github.com/zzm6899/Sessionry)** covers the work around a shoot. Clients pick favourites from watermarked proofs, and I can manage bookings, deliver galleries and send invoices from the same workspace. [Try the proofing demo](https://book.zacmclients.photos/demo/proofing) or [explore studio access](https://book.zacmclients.photos/buy).
+- **[UTS Taekwondo](https://www.utstkd.org.au/)** has a public timetable and sign-up page. I built the member portal to handle memberships and class passes, and to let coaches take attendance and log hours. Download and open the [demo HTML](docs/utstkd/index.html) to book a class, take roll call or update the timetable with fictional records.
 
 ## Background
 
-- **UTS:** Bachelor of Data Science Engineering (Honours), in progress.
-- **KPMG Australia:** data analyst internship working on long service leave remediation with SQL, Python, Excel and data validation.
-- **Freelance photography:** sports, conventions, weddings and private events.
+I’m completing a Bachelor of Data Science Engineering (Honours) at the University of Technology Sydney. During my data analyst internship at KPMG Australia, I used SQL, Python and Excel to validate data for a long service leave remediation project. I also photograph sports, conventions, weddings and private events.
